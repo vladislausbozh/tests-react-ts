@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,li {
+  list-style: none;
+}
 body {
   background-color: rgb(85, 152, 176);
 }
@@ -9,7 +17,7 @@ body {
 
 .box {
   background-color: rgb(255, 255, 255);
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   height: 400px;
   max-width: 600px;
@@ -30,7 +38,23 @@ body {
 }
 .progress-bar {
   background-color: red;
-  width: 0px;
+  width: 0 ;
   height: 100%;
   border-radius: 20px;
+}
+
+.title {
+  margin: 10px 0px 10px 0px;
+  
+}
+
+ul {
+  
+}
+
+li {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin-top: 10px;
 }
