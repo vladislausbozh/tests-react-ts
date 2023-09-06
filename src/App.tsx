@@ -20,10 +20,7 @@ function App() {
         <ul>
           <li>модулем</li>
           <li>компонентом</li>
-          
           <li>пакетом</li>
-          
-          
         </ul>
       </div>
     </div>
