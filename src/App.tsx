@@ -1,5 +1,5 @@
 import { link } from 'fs';
-import React from 'react';
+import React, { useState } from 'react';
 
 import './App.css';
 
@@ -24,7 +24,14 @@ const questions = [
 
 function App() {
 
+  const [step,setStep] = useState(0)
+
   const question = questions[0]
+
+  const onClickVariant = (index:number) => {
+    console.log(step,index)
+  }
+
   return (
     <div className="App">
       <div className="box">
@@ -34,10 +41,9 @@ function App() {
 
         <h2 className='title'> {question.title} ?</h2>
         <ul>
-          {question.variants.map(text => <li>{text}</li>)}
-          {/* <li>модулем</li>
-          <li>компонентом</li>
-          <li>пакетом</li> */}
+          {question.variants.map((text,index) => 
+            <li onClick={ () => onClickVariant(index)} key={text}>{text}</li>)
+          }
         </ul>
       </div>
     </div>
