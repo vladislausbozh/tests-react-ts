@@ -28,10 +28,17 @@ function App() {
   const [result, setResult] = useState(0)
 
   const question = questions[step]
+  
 
   const onClickVariant = (index: number) => {
+    
     setStep(step + 1)
+    if(index === question.correct) {
+      setResult(result + 1)
+    }
   }
+
+  console.log(result)
 
   const percentage = Math.round((step / questions.length) * 100)
 
@@ -56,15 +63,15 @@ function App() {
           ) : (
             <>
               <div className='result'>
-                <h2 className='title'>Вы вравильно ответели на 3 из 5 вопросов</h2>
+                <h2 className='title'>Вы правильно ответели на {result} из {questions.length} </h2>
 
                 <div>
                   <img width={100} src="/confetti.svg" alt="" />
                 </div>
 
-                <div className='button'>
+                <a href='./' className='button'>
                   <button className='btn'>Еше раз</button>
-                </div>
+                </a>
               </div>
             </>
           )}
