@@ -17,8 +17,8 @@ body {
 
 .box {
   background-color: rgb(255, 255, 255);
-  /* display: flex; */
-  justify-content: center;
+  
+  
   height: 400px;
   max-width: 600px;
   margin: 0 auto ;
@@ -45,7 +45,7 @@ body {
 
 .title {
   margin: 10px 0px 10px 0px;
-  
+  text-align: center;
 }
 
 ul {
@@ -63,4 +63,28 @@ li {
 
 li:hover {
   border: 1px solid rgb(0, 0, 0);
+}
+
+.button {
+  
+}
+
+.btn {
+  background-color: rgb(99, 167, 85);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  color: beige;
+  cursor: pointer;
+  transition: .2s ease-in;
+}
+
+.btn:hover {
+  color: rgb(39, 39, 34);
+  background-color: rgb(156, 162, 155);
+  border: 1px solid  rgb(39, 39, 34);
+  font-weight: 600;
+} 
+.result {
+  
 }
