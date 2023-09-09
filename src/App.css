@@ -6,6 +6,9 @@
 ul,li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 body {
   background-color: rgb(85, 152, 176);
 }
@@ -67,17 +70,19 @@ li:hover {
 }
 
 .button {
-  
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
   background-color: rgb(99, 167, 85);
-  padding: 10px 20px;
+  padding: 10px 45px;
   border: none;
   border-radius: 15px;
   color: beige;
   cursor: pointer;
   transition: .2s ease-in;
+  
 }
 
 .btn:hover {
@@ -88,4 +93,10 @@ li:hover {
 } 
 .result {
   
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
 }

@@ -65,12 +65,12 @@ function App() {
               <div className='result'>
                 <h2 className='title'>Вы правильно ответели на {result} из {questions.length} </h2>
 
-                <div>
+                <div className='img'>
                   <img width={100} src="/confetti.svg" alt="" />
                 </div>
 
                 <a href='./' className='button'>
-                  <button className='btn'>Еше раз</button>
+                  <button className='btn'>Еще раз</button>
                 </a>
               </div>
             </>
